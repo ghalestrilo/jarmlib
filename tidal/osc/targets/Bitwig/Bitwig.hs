@@ -12,6 +12,8 @@
 bwTarget = Target {oName     = "bitwig",
                    oAddress  = "127.0.0.1",
                    oPort     = 8000,
+                   oBusPort  = Nothing,
+                   oHandshake  = False,
                    oLatency  = 0.2,
                    oWindow   = Nothing,
                    oSchedule = Live

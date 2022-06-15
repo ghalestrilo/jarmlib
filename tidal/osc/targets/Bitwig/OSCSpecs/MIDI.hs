@@ -13,7 +13,7 @@ bwMIDI = [OSC "/vkb_midi/{vkbnotech}/note/{vkbnote}" $ ArgList [("vkbnotevel", N
           -- (OSC "/vkb_midi/{Channel:1-16}/aftertouch {Pressure:0-127} Sends Channel Aftertouch
           OSC "/vkb_midi/{vkbpbch}/pitchbend" $ ArgList [("vkbpb", Nothing)]] -- {Pitch:0-127 (No-Bend:64)}
           -- (OSC "/vkb_midi/velocity {0-127 (0 disables fixed velocity, 1-127 fixes the velocity to the value)}
-          -- (OSC "/vkb_midi/noterepeat/isActive {0,1} Turn on/off
+          -- OSC "/vkb_midi/noterepeat/isActive $ ArgList [("vkbrepeat", 0)]
           -- (OSC "/vkb_midi/noterepeat/period {1/4, 1/4t, 1/8, 1/8t, 1/16, 1/16t, 1/32, 1/32t} The repeat period
           -- (OSC "/vkb_midi/noterepeat/length {1/4, 1/4t, 1/8, 1/8t, 1/16, 1/16t, 1/32, 1/32t} The note length
 :}
